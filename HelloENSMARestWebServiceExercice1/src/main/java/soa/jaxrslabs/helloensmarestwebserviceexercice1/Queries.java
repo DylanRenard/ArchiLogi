@@ -8,19 +8,19 @@ public class Queries {
          static String URL="jdbc:mysql://e-srvlamp:3306/s133207";
          static String login="s133207";
          static String password="gqy42mb";
-         static String SELECT ="SELECT COUNT (*) FROM product;";
+         static String SELECT ="SELECT COUNT (*) FROM product ";
          
-         static int testSelect(String select, Statement st){
+         static int exeQuerries(String select, Statement st){
                   try{
-                           ResultSet contenuTab=st.executeQuery(select);
-                          
-                           
+                           ResultSet contenuTab=st.executeQuery(select);  
+                           System.out.println("fzefzegf"+contenuTab.toString());
                            return contenuTab.getInt(1);
                                     
                            
                            
-                  }catch(Exception e){
+                  }catch(SQLException e){
                            System.out.println("Erreur dans testSelect");
+                           e.printStackTrace();
                   }
                   return -1;
          }

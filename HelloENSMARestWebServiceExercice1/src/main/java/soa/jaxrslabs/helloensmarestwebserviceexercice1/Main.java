@@ -27,6 +27,7 @@ public class Main {
                     + "%sapplication.wadl\nHit enter to stop it...",
                     BASE_URI, BASE_URI));
             System.in.read();
+           
             server.shutdownNow();
         } catch (Exception e) {
             e.printStackTrace();

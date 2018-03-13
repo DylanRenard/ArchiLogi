@@ -14,7 +14,7 @@ public class ServeurSQL {
                   
                   /*Question 4*/
 
-                  Queries.testSelect(Queries.SELECT, st);
+                  Queries.exeQuerries(Queries.SELECT, st);
                   
                   
                   /*QUESTION 3 : Prepared Statement
