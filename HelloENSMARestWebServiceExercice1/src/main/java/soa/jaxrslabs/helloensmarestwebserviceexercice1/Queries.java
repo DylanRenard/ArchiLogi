@@ -9,6 +9,8 @@ public class Queries {
          static String login="s133207";
          static String password="gqy42mb";
          static String SELECT ="SELECT COUNT (*) FROM product ";
+         static String GetInfo = "SELECT * from product WHERE ";
+         static String UpdateNom = "UPDATE product SET name =  ";
          
          static int exeQuerries(String select, Statement st){
                   try{

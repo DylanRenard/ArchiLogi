@@ -33,7 +33,7 @@ public class product {
             }
             
             if(!id.equals("")) {
-            	String NewQuerry = Queries.SELECT + "WHERE " + id +";" ;
+            	String NewQuerry = Queries.GetInfo + id +";" ;
             	result = "" + Queries.exeQuerries(NewQuerry, st);
                 System.out.println(result);
                 st.close();
@@ -64,7 +64,7 @@ public class product {
             System.out.println("connexion etablie !");
             Statement st=cn.createStatement();
 		
-            String querry = "UPDATE product SET name =  " + nom +";";
+            String querry = Queries.UpdateNom + nom +";";
             Queries.exeQuerries(querry, st);
             st.close();
             cn.close();
